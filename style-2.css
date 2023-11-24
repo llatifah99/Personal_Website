@@ -217,7 +217,7 @@ footer .socials a:hover {
     transform: scaleX(0.2);
   }
   .project img {
-    max-width: 300px;
+    max-width: 275px;
   }
   .message,
   .click-me {
