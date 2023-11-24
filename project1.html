@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Web Lita Latifah</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Css file -->
+    <link rel="stylesheet" href="style-2.css" />
+  </head>
+
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-nama">Lita <span>Latifah</span></a>
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+        <a href="mypProject.html">My Project</a>
+        <a href="myblog.html">My Blog</a>
+        <a href="aboutme.html">About me</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+    <!-- isi project -->
+    <div class="project">
+      <h1>
+        Final Project: Attendance Machine With Covid-19 Protocols Management
+        Using Raspberry Pi
+      </h1>
+      <img
+        src="foto/project1.png"
+        alt="MyProject"
+        title="This image isn't mine"
+      />
+      <h3>Research Background</h3>
+      <p>
+        School closures due to COVID-19 have some negative impacts on students,
+        such as declining student abilities, Higher Dropout Rates, and
+        disrupting emotional development and psychological health. To prevent
+        learning loss during the pandemic, the government allows schools to
+        carry out face-to-face learning by implementing the Covid-19 protocol.
+      </p>
+      <h3>Research Question</h3>
+      <p>
+        How to build an integrated framework for attendance with Covid-19
+        protocols management. The protocols include: checking body temperature,
+        mask, and automatic hand sanitizer
+      </p>
+      <h3>Scope and Limitation</h3>
+      <ol>
+        <li>Presence recording using RFID</li>
+        <li>Checking the use of masks is detected at a certain distance.</li>
+        <li>The student's face must face forward.</li>
+        <li>The student's face will be detected in the provided frame.</li>
+      </ol>
+      <h3>Purpose</h3>
+      <p>
+        To Create an attendance machine that can check temperature, mask, and
+        provide automatic hand sanitizer. So, it can simplify the task of Satgas
+        Covid-19 in screening students before entering the school area.
+      </p>
+      <h3>The system works</h3>
+      <img src="project2.png" alt="" />
+      <p>
+        Students tap their cards on the RFID reader. If the student card is
+        registered, the temperature sensor and the camera will turn on. there
+        are 3 conditions: When the temperature sensor reads more than 37.5
+        degrees, Student data will be recorded in the database. alarm will go
+        off, and data send via telegram. When the temperature is normal and
+        wearing a mask, the data will be stored in the database. The Hand
+        Sanitizer will come out automatically because the servo is moving. When
+        the student is not wearing a mask or the student card is not registered,
+        the alarm will go off
+      </p>
+    </div>
+    <!-- isi project -->
+
+    <!-- Send me message start -->
+    <section id="message" class="message">
+      <h1>Get in touch</h1>
+      <div class="row">
+        <div class="content">
+          <p>
+            Feel free to email me about anything. Do you have some feedback or
+            suggestions?
+          </p>
+          <a href="https://mail.google.com/" target="_blank"
+            ><button class="click-me">Send Me Text</button></a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Send me message end -->
+
+    <!-- footer start -->
+    <footer>
+      <div class="socials">
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="https://twitter.com/" target="_blank"
+          ><i data-feather="twitter"></i
+        ></a>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><i data-feather="facebook"></i
+        ></a>
+      </div>
+    </footer>
+    <!--Footer end-->
+    <!-- Icon -->
+    <script>
+      feather.replace();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
